@@ -1,0 +1,7 @@
+FROM guacamole/guacamole:1.5.3
+ENV GUACD_HOSTNAME=guacd
+ENV MYSQL_HOSTNAME=mysql
+ENV MYSQL_DATABASE=guacamole_db
+ENV MYSQL_USER=guacamole_user
+ENV MYSQL_PASSWORD=guacpass
+EXPOSE 8080
