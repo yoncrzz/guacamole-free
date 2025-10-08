@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: guacamole
+    env: docker
+    plan: free
+    autoDeploy: true
+    ports:
+      - 8080
+    envVars:
+      - key: GUACD_HOSTNAME
+        value: guacd
+      - key: MYSQL_HOSTNAME
+        value: mysql
+      - key: MYSQL_DATABASE
+        value: guacamole_db
+      - key: MYSQL_USER
+        value: guacamole_user
+      - key: MYSQL_PASSWORD
+        value: guacpass
